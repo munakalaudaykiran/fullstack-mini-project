@@ -4,7 +4,7 @@ function App() {
   const [facts, setFacts] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/facts/")
+    fetch("https://beni-backend-bsts.onrender.com/api/facts/")
       .then((res) => res.json())
       .then((data) => setFacts(data))
       .catch((err) => console.error(err));
